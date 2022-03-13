@@ -4,15 +4,15 @@ const mongoose = require('mongoose');
 const Blog = mongoose.model('Blog', {
     title: {
         type: String,
-        required: true
+        // required: true
     },
     description: {
         type: String,
-        required: true
+        // required: true
     },
     publishDate: {
         type: Date, default: Date.now,
-        required: true
+        // required: true
     }
 
 })
