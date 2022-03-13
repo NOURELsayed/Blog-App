@@ -13,5 +13,4 @@ router.patch(UPDATE_DELETE_POST, postController.updatePost);
 
 router.delete(UPDATE_DELETE_POST, postController.deletePost);
 
-
 module.exports = router;

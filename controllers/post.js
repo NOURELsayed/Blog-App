@@ -36,6 +36,7 @@ const updatePost = async (req, res) => {
     try {
         const post = await Post.findByIdAndUpdate(req.params.id, req.body, { new: true, runValidators: true })
         console.log(req.body,"updateeeeeeeeeeeeee");
+        console.log(req.params.id);
         if (!post) {
             return res.status(404).send()
         }
